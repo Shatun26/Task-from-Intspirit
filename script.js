@@ -7,8 +7,9 @@ const arr6 = [1, 1, 1, 1, 1];
 const arr7 = [10, 9, 8, 7, 8];
 
 const sale = (buy, max) => {
+  const a = buy.length;
   const s = buy.reduce((partial_sum, a) => partial_sum + a, 0);
-  const z = s * max;
+  const z = a * max;
   const result = z - s;
   return result;
 };
